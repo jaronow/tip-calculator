@@ -3,7 +3,7 @@ function calcTip() {
   let service = document.getElementById("service").value;
   let peeps = document.getElementById("people").value;
 
-  if (billAmt === "" || service === 0) {
+  if (billAmt === "" || service <= 0) {
     alert("Please input bill amount and/or service quality");
     return;
   }
@@ -16,11 +16,11 @@ function calcTip() {
   }
 
   let totalTip = (billAmt * service) / peeps;
-  total = Math.round(total * 100) / 100;
-  total = total.toFixed(2);
+  totalTip = Math.round(totalTip * 100) / 100;
+  totalTip = totalTip.toFixed(2);
 
   document.getElementById("tipTotal").style.display = "block";
-  document.getElementById("tip").innerHTML = total;
+  document.getElementById("tip").innerHTML = totalTip;
 };
 
 document.getElementById("tipTotal").style.display = "none";
