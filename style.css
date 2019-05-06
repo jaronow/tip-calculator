@@ -1,3 +1,17 @@
+/* Remove number arrows For Firefox */
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+/* Remove number arrows for Webkit browsers like Safari and Chrome */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 header {
   background-color: hsl(240, 100%, 15%);
   color: hsl(0, 0%, 90%);
@@ -42,6 +56,11 @@ body {
 #people {
   margin: 10px;
   width: 15%;
+}
+
+#people:focus {
+  border: 5px solid blue;
+  border-radius: 5px;
 }
 
 #calculate {
