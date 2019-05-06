@@ -16,6 +16,8 @@ function calcTip() {
   }
 
   let totalTip = (billAmt * service) / peeps;
+  total = Math.round(total * 100) / 100;
+  total = total.toFixed(2);
 };
 
 
