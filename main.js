@@ -12,7 +12,7 @@ function calcTip() {
     peeps = 1;
     document.getElementById("each").style.display = "none";
   } else {
-    document.getElementById("each").style.display = "block";
+    document.getElementById("each").style.display = "inline";
   }
 
   let totalTip = (billAmt * service) / peeps;
