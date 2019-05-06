@@ -8,6 +8,22 @@ header {
   text-align: center;
 }
 
+#total {
+  margin: 10px;
+}
+
+#service {
+  margin: 10px;
+}
+
+#people {
+  margin: 10px;
+}
+
+#calculate {
+  margin: 20px;
+}
+
 #tipTotal {
   text-align: center;
 }
