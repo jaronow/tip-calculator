@@ -1,15 +1,38 @@
 header {
   background-color: hsl(240, 100%, 15%);
   color: hsl(0, 0%, 90%);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+body {
+  height: 490px;
+  width: 400px;
+  margin: 100px auto;
   text-align: center;
+  border: 1px solid blue;
+  border-radius: 35px;
 }
 
 #calculator {
-  text-align: center;
+
 }
 
 #total {
   margin: 10px;
+  width: 20%;
+}
+
+#total:focus {
+  border: 5px solid blue;
+  border-radius: 5px;
+}
+
+.total {
+  padding-top: 10px;
 }
 
 #service {
@@ -18,6 +41,7 @@ header {
 
 #people {
   margin: 10px;
+  width: 15%;
 }
 
 #calculate {
@@ -33,12 +57,13 @@ header {
 }
 
 #tipTotal {
-  text-align: center;
   margin: 10px;
 }
 
 footer {
   background-color: hsl(240, 100%, 15%);
   color: hsl(0, 0%, 90%);
-  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 5px;
 }

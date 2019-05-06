@@ -9,12 +9,15 @@
     <header>
       <h1>Tip Calculator</h1>
     </header>
-    <div id='calculator'>
+    <section id='calculator'>
       <form class="calc">
+        <div class="total">
         <label for="total">Total Bill Amount:</label>
         <br>
         <input type="text" id="total" placeholder="ex: 18.79">
         <br>
+        </div>
+        <div class="service">
         <label for="service">How was your service?</label>
         <br>
         <select id="service">
@@ -26,16 +29,19 @@
           <option value="0.05">Horrendous - 5%</option>
         </select>
         <br>
+        </div>
+        <div class="people">
         <label for="people">How many people are splitting the bill?</label>
         <br>
         <input type="number" id="people">
         <br>
+        </div>
         <button type="button" id="calculate">Calculate Tip</button>
       </form>
-    </div>
-    <div id="tipTotal">
+    </section>
+    <section id="tipTotal">
       <span>&dollar;</span><span id="tip">0.00</span><span id="each"> per person</span>
-    </div>
+    </section>
     <footer>&commat; Will Aronow 2019</footer>
   </body>
 </html>
