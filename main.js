@@ -7,6 +7,12 @@ function calcTip() {
     alert("Please input bill amount and/or service quality");
     return;
   };
+
+  if (peeps === 0 || peeps <= 1) {
+    peeps = 1;
+  };
+
+  
 };
 
 document.getElementById("calculate").onclick = function() {
