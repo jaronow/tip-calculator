@@ -12,7 +12,7 @@ function calcTip() {
     peeps = 1;
   };
 
-  
+  let totalTip = (billAmt * service) / peeps;
 };
 
 document.getElementById("calculate").onclick = function() {
