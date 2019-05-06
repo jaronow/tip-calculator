@@ -8,6 +8,10 @@ header {
   text-align: center;
 }
 
+#tipTotal {
+  text-align: center;
+}
+
 footer {
   background-color: hsl(240, 100%, 15%);
   color: hsl(0, 0%, 90%);
