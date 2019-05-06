@@ -23,7 +23,8 @@ function calcTip() {
   document.getElementById("tip").innerHTML = total;
 };
 
-
+document.getElementById("tipTotal").style.display = "none";
+document.getElementById("each").style.display = "none";
 
 document.getElementById("calculate").onclick = function() {
   calcTip();
