@@ -21,7 +21,15 @@ header {
 }
 
 #calculate {
-  margin: 20px;
+  margin: 10px 0px;
+  height: 50px;
+  width: 150px;
+}
+
+#tipTotal:before {
+  content: "Tip Amount:";
+  display: block;
+  margin-bottom: 10px;
 }
 
 #tipTotal {

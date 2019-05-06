@@ -11,10 +11,12 @@
     </header>
     <div id='calculator'>
       <form class="calc">
-        <p>Total Bill Amount:</p>
+        <label for="total">Total Bill Amount:</label>
+        <br>
         <input type="text" id="total" placeholder="ex: 18.79">
         <br>
-        <p>How was your service?</p>
+        <label for="service">How was your service?</label>
+        <br>
         <select id="service">
           <option hidden disable selected value></option>
           <option value="0.3">Outstanding - 30%</option>
@@ -24,7 +26,8 @@
           <option value="0.05">Horrendous - 5%</option>
         </select>
         <br>
-        <p>How many people are splitting the bill?</p>
+        <label for="people">How many people are splitting the bill?</label>
+        <br>
         <input type="number" id="people">
         <br>
         <button type="button" id="calculate">Calculate Tip</button>
