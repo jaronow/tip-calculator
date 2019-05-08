@@ -19,10 +19,12 @@ function calcTip() {
   totalTip = Math.round(totalTip * 100) / 100;
   totalTip = totalTip.toFixed(2);
 
+  document.getElementById("tipAmount").style.display = "block";
   document.getElementById("tipTotal").style.display = "block";
   document.getElementById("tip").innerHTML = totalTip;
 };
 
+document.getElementById("tipAmount").style.disable = "none";
 document.getElementById("tipTotal").style.display = "none";
 document.getElementById("each").style.display = "none";
 

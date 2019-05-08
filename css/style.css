@@ -69,12 +69,6 @@ body {
   width: 150px;
 }
 
-#tipTotal:before {
-  content: "Tip Amount:";
-  display: block;
-  margin-bottom: 10px;
-}
-
 #tipTotal {
   margin: 10px;
 }
