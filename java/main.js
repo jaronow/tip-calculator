@@ -6,14 +6,14 @@ function calcTip() {
   if (billAmt === "" || service <= 0) {
     alert("Please input bill amount and/or service quality");
     return;
-  }
+  };
 
   if (peeps === "" || peeps <= 1) {
     peeps = 1;
     document.getElementById("each").style.display = "none";
   } else {
     document.getElementById("each").style.display = "inline";
-  }
+  };
 
   let totalTip = (billAmt * service) / peeps;
   totalTip = Math.round(totalTip * 100) / 100;
@@ -24,10 +24,12 @@ function calcTip() {
   document.getElementById("tip").innerHTML = totalTip;
 };
 
+// used to hide tip line at start of app
 document.getElementById("tipAmount").style.display = "none";
 document.getElementById("tipTotal").style.display = "none";
 document.getElementById("each").style.display = "none";
 
+// makes calculate button work when clicked
 document.getElementById("calculate").onclick = function() {
   calcTip();
 };
