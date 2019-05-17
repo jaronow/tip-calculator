@@ -24,7 +24,7 @@ function calcTip() {
   document.getElementById("tip").innerHTML = totalTip;
 };
 
-document.getElementById("tipAmount").style.disable = "none";
+document.getElementById("tipAmount").style.display = "none";
 document.getElementById("tipTotal").style.display = "none";
 document.getElementById("each").style.display = "none";
 

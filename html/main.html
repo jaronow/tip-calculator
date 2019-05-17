@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Top Tip Calculator for Restaurants, Dining Out, & Food Delivery</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script type="text/javascript" src="../java/main.js" async></script>
   </head>
   <body>
     <header>
@@ -14,10 +15,9 @@
         <div class="total">
         <label for="total">Total Bill Amount:</label>
         <br>
-        <input type="text" id="total" placeholder="ex: 18.79">
+        <span>&dollar;</span><input type="text" id="total" placeholder="ex: 18.79">
         <br>
-        </div>
-        <div class="service">
+      </div>
         <label for="service">How was your service?</label>
         <br>
         <select id="service">
@@ -29,22 +29,17 @@
           <option value="0.05">Horrendous - 5%</option>
         </select>
         <br>
-        </div>
-        <div class="people">
         <label for="people">How many people are splitting the bill?</label>
         <br>
         <input type="number" id="people">
         <br>
-        </div>
         <button type="button" id="calculate">Calculate Tip</button>
       </form>
-    </section>
-    <section id="tipTotal">
+    <div id="tipTotal">
       <p id="tipAmount">Total Tip:</p>
       <span>&dollar;</span><span id="tip">0.00</span><span id="each"> per person</span>
+    </div>
     </section>
     <footer>&commat; Will Aronow 2019</footer>
   </body>
 </html>
-
-<script type="text/javascript" src="../java/main.js"></script>
