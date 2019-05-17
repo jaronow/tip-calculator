@@ -24,8 +24,10 @@ function calcTip() {
   document.getElementById("tip").innerHTML = totalTip;
 };
 
+document.getElementById("tipTotal").style.visibility = "hidden";
+
 // makes calculate button work when clicked
 document.getElementById("calculate").onclick = function() {
   calcTip();
-  document.getElementById('tipTotal').hidden = false;
+  document.getElementById("tipTotal").style.visibility = "visible";
 };
