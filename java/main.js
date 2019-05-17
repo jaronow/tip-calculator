@@ -24,12 +24,8 @@ function calcTip() {
   document.getElementById("tip").innerHTML = totalTip;
 };
 
-// used to hide tip line at start of app
-document.getElementById("tipAmount").style.display = "none";
-document.getElementById("tipTotal").style.display = "none";
-document.getElementById("each").style.display = "none";
-
 // makes calculate button work when clicked
 document.getElementById("calculate").onclick = function() {
   calcTip();
+  document.getElementById('tipTotal').hidden = false;
 };
