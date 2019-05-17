@@ -1,3 +1,18 @@
+// Node.js server
+const http = require('http');
+const port = process.env.PORT || 3000
+
+let requestListener = ((request, response) => {
+  response.writeHead(200, {'Content-Type': 'text/javascript'});
+  response.end
+});
+
+const server = http.createServer(requestListener);
+server.listen(port, () => {
+  console.log(`Server listening on port: ${port}`);
+});
+
+// tip calculator code
 function calcTip() {
   let billAmt = document.getElementById("total").value;
   let service = document.getElementById("service").value;
