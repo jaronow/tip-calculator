@@ -86,3 +86,9 @@ footer {
   border-bottom-right-radius: 30px;
   padding: 5px;
 }
+
+/* mobile styling */
+@media (width < 500px) {
+  height: 100vh;
+  width: 100vw;
+}
